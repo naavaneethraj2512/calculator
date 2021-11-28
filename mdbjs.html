@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<style>	
+		 html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+    }
+    body
+    {
+    	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATYAAACjCAMAAAA3vsLfAAAAjVBMVEUAAAD////d3d36+vr39/e4uLhpaWnv7+/8/Pzh4eHz8/PW1tbZ2dnr6+vn5+fExMSGhobKysqqqqqwsLBPT0+kpKQsLCx9fX2amppUVFRbW1u+vr7Hx8dfX1+SkpInJydISEhwcHAzMzMUFBQhISFAQECKiooMDAxtbW1+fn4xMTE5OTlCQkKenp4bGxuc4hHmAAAHLklEQVR4nO2da0PiOhCGiYBcqtwVWQSK6wUX9f//vCMHK037pmlDpumUPB8X2+nMNsnckjYaHo/H4/F4PB6Px+PxeDwej8fjiXO/eH0YjoNOv9ntNvudYLxcv87uXT9VlfmaT25aAtIKJvO/rp+viuymHWyxE7fTa9dPWS3mY53JIsZz189aFWbDvDY7sgxdP3EFGN0WM9qBwcj1Uzvms1vcaAeaD66f3CGfZjb7n+6lGm7UPMNq37QucaguBucZ7UBv5lqLslmeb7QDbdd6lMrqzPF5ovXHtS7lMbVltAMT19qUxMbAU8ticBHB6rVdox24gIG6tm81IdautaLG0gqapOYrau5MR1EeXWtGyRWV1YQIXOtGR4/OakLcuNaOipjV+neTaXBmeDUYTyZ3sSR6Td+3+Lz24zLslobhQn+6Ot5hG/vHsTvd6BhiBXdBcaONY45afLpclq8VNVJuLYz/Miu4UAz38asl77l2/ts2rt1t8kdFmQ9xm0wWSdfWrLS1l1RPR9+5/bn0pW3p93oVouUa6Cr9B8mYq9kZ9HqDTnLFAFdu5ZeRXpfySIRU6E9Wx59aV5PR6iP+w341vwuOZm9twIVP8r1rFGbJLwQ2W2PxvUKO/qnv0W613uAviZvXZ3pLKDbAfxUa3r0v371r+pRVIznfWw6DkiHb0O7tXZHKSxKbDa0bDOkn1VIMUlNSoW3H7v3d8JDUSrEkGJPuh6hBsPCWtppls5ELcEEbaGW1ZDIDAqY2BbhgA5QSnzYlvCMJ3GuA6GUTVzYlwKZC5q/bX6STEE8WRWAJFgU44A4rZbHOBBbqA1bngdJRNEtazFMoivwtexLKZ451suqPKmRsbcooGUW6G+V/zIGrDuc6FvQ+hNhZFoM7mPj6ILil2Xp9KYRi+LZEw/px074cOEx79uWUwz18C97tC0JxrxBf9gWVAmxlI6mRTJCkVwpJJQDr7SSOwTOSxLW3AenSpxGF6qxMiwp/kNmIgh4YK/Dc7AHjUaqqOYrieLogaOCQeQUofcSzMTVVeqEbo43GCAgjmkdpgasb2Q4C6CNyjK9WSBE6cagtc0Enjgw0bCxXSOOgdmqOG05RoEjYJYrEcdzFhta2OzpxKL7i2MuL0h8EYXwEmhOsVshKAvXjEvaeoTiBY0HBm80EWCEt2WwEGVFqYB2hZLMJ3LVaZf5VwWx2S2Rl8ITUKNts6g7qqgLNRljzhVVmm70m5QAHKWEGDJYT+O2JgSkJwv4pWPTjV7yCeSPC2iUK5TlWE1CamlAP9L/E0N2FyV0RUklbIGkc07vQbGRrAqz3cNygALeIkk1usOuI4zYifL4MkSeFm444bpLETbVECVfcGsixCwQ3hxKtpVAWy0ZUGCYQLQowRBDimUIWNYoucQJJ0LXm6bYpTzQiWN4U5zpwLCWopmmC7NFWIYhjvU+tTddyzvVLIYflipChjmWfV3kwl10xpaHUx2p7qPJoKa6t4urjdS267+qPLfCc2hRdqEesLacZhyPx7EFtKD23A5YOtcg4w4yn13Yg67TY1of+eh2zrLMGOcbxRzJGqbDQkKrY4/sD2zGK+0BOpE6wK8Qi+wNPHDO7EdnvgxCPxum3ve6gPJ7d9UeSMXZ6jRi+mNw3fNQYjWP7R4z4OxHsG43NdSpSvSn8wa/3HGeAcsyHn4gvClGuNZUc6y4LRPfX+Q5zDwmUKZFY9qgbNbLswWQ+XudwSMJ13qM/uZ+ULTUC/W6Sx6m4YJrRs/E8LXKuMfsPT0gW+nVB8akAmU5DkXPcub9sSZc3annHh/hkOsCoFVwFY1c3Qh5b0c4EeA5W5mYfxekYCJ5b+2QS/YHRrINmquwb5Tcbv95TgJx2+01MpJdTTQ019+cVCPfalIncRDPB/yy0laa8awLHhhlEIhHyu8szmZjVmC3v9wFqsB4ckQOqUyfqteyHaJL/Oc3G/KDAOPJ4jP2wGp4yjU1NAi6f2eoyRA+8SJrJx+LuR+tpe/ow2iuu/SWf2fj11GfwGtfMcCtULrMRbr10gZS3MEvz5zEb3wKCAsl9MGozyGE2ns0yWbxJdQWTMxP0ZuNcP1CxkTLiBofza83WZNkGqOND0rF4iURrtlotoifkLRdXWo8jgc5sIcEjV4LEVpVlMcNpzBaSPHIlCBMVv6t1vN6nyWRnmq1b9N1lxX2qa6PbG0++GfY6uqN8sswGv4BVI94y0j/mGRCuHYAFUPfxGZuN46E8hVF+It3UbBz3CBkwUzQimZmtH5by0FUAD1Qjs13EAI3Yoj5IA7O16vOhw3yAPTLFzVajBHheXlKuSFGzFQ7P6sEuUSrVTFOJVsDbSxufJ96l0pUmeSn1PwwKNxPWit1p6Gk/CXB6OW8u902LCH8Wh6Y2rIw+F962sKWhDswDIYY5UrOb7+ktuOzR6fF4PB6Px+PxeDwej8fj8Xg8R/4Dc2hKP/wdZwEAAAAASUVORK5CYII=);
+    	
+    }
+
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
+    }
+
+    .calculator {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+    }
+
+    .calculator-screen {
+      width: 100%;
+      height: 80px;
+      border: none;
+      background-color: #252525;
+      color: #fff;
+      text-align: right;
+      padding-right: 20px;
+      padding-left: 10px;
+      font-size: 4rem;
+    }
+
+    button {
+      height: 60px;
+      font-size: 2rem!important;
+    }
+
+    .equal-sign {
+      height: 98%;
+      grid-area: 2 / 4 / 6 / 5;
+    }
+
+    .calculator-keys {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    div
+    {
+    	background:linear-gradient(25deg,red,blue,green);
+    }
+	</style>
+</head>
+<body>
+	<div class="container my-4">  
+
+<p> <a target="_blank" href="https://mdbootstrap.com/docs/standard/"></p>
+
+  <a class="btn btn-primary me-2" href="https://mdbootstrap.com/docs/standard/getting-started/installation/" target="_blank" role="button"> <i class="fas fa-download ms-2"></i></a>
+  <a class="btn btn-danger me-2" target="_blank" href="https://mdbootstrap.com/docs/standard/" role="button"></a>
+  <a class="btn btn-success me-2" target="_blank" href="https://mdbootstrap.com/docs/standard/getting-started/" role="button"></a>
+  <a class="btn btn-dark me-2" target="_blank" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button"> <i class="fab fa-github ms-2"></i></a>
+
+  <hr class="mb-5"/>  
+
+
+<div class="calculator card">
+
+    <input type="text" class="calculator-screen z-depth-1" value="" disabled />
+
+    <div class="calculator-keys">
+
+      <button type="button" class="operator btn btn-info" value="+">+</button>
+      <button type="button" class="operator btn btn-info" value="-">-</button>
+      <button type="button" class="operator btn btn-info" value="*">&times;</button>
+      <button type="button" class="operator btn btn-info" value="/">&divide;</button>
+
+      <button type="button" value="7" class="btn btn-light waves-effect">7</button>
+      <button type="button" value="8" class="btn btn-light waves-effect">8</button>
+      <button type="button" value="9" class="btn btn-light waves-effect">9</button>
+
+
+      <button type="button" value="4" class="btn btn-light waves-effect">4</button>
+      <button type="button" value="5" class="btn btn-light waves-effect">5</button>
+      <button type="button" value="6" class="btn btn-light waves-effect">6</button>
+
+
+      <button type="button" value="1" class="btn btn-light waves-effect">1</button>
+      <button type="button" value="2" class="btn btn-light waves-effect">2</button>
+      <button type="button" value="3" class="btn btn-light waves-effect">3</button>
+
+
+      <button type="button" value="0" class="btn btn-light waves-effect">0</button>
+      <button type="button" class="decimal function btn btn-secondary" value=".">.</button>
+      <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear">AC</button>
+
+      <button type="button" class="equal-sign operator btn btn-default" value="=">=</button>
+
+    </div>
+  </div>
+</div>
+<script>
+	const calculator = {
+  displayValue: '0',
+  firstOperand: null,
+  waitingForSecondOperand: false,
+  operator: null,
+};
+
+function inputDigit(digit) {
+  const { displayValue, waitingForSecondOperand } = calculator;
+
+  if (waitingForSecondOperand === true) {
+    calculator.displayValue = digit;
+    calculator.waitingForSecondOperand = false;
+  } else {
+    calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
+  }
+}
+
+function inputDecimal(dot) {
+  // If the `displayValue` does not contain a decimal point
+  if (!calculator.displayValue.includes(dot)) {
+    // Append the decimal point
+    calculator.displayValue += dot;
+  }
+}
+
+function handleOperator(nextOperator) {
+  const { firstOperand, displayValue, operator } = calculator
+  const inputValue = parseFloat(displayValue);
+
+  if (operator && calculator.waitingForSecondOperand)  {
+    calculator.operator = nextOperator;
+    return;
+  }
+
+  if (firstOperand == null) {
+    calculator.firstOperand = inputValue;
+  } else if (operator) {
+    const currentValue = firstOperand || 0;
+    const result = performCalculation[operator](currentValue, inputValue);
+
+    calculator.displayValue = String(result);
+    calculator.firstOperand = result;
+  }
+
+  calculator.waitingForSecondOperand = true;
+  calculator.operator = nextOperator;
+}
+
+const performCalculation = {
+  '/': (firstOperand, secondOperand) => firstOperand / secondOperand,
+
+  '*': (firstOperand, secondOperand) => firstOperand * secondOperand,
+
+  '+': (firstOperand, secondOperand) => firstOperand + secondOperand,
+
+  '-': (firstOperand, secondOperand) => firstOperand - secondOperand,
+
+  '=': (firstOperand, secondOperand) => secondOperand
+};
+
+function resetCalculator() {
+  calculator.displayValue = '0';
+  calculator.firstOperand = null;
+  calculator.waitingForSecondOperand = false;
+  calculator.operator = null;
+}
+
+function updateDisplay() {
+  const display = document.querySelector('.calculator-screen');
+  display.value = calculator.displayValue;
+}
+
+updateDisplay();
+
+const keys = document.querySelector('.calculator-keys');
+keys.addEventListener('click', (event) => {
+  const { target } = event;
+  if (!target.matches('button')) {
+    return;
+  }
+
+  if (target.classList.contains('operator')) {
+    handleOperator(target.value);
+		updateDisplay();
+    return;
+  }
+
+  if (target.classList.contains('decimal')) {
+    inputDecimal(target.value);
+		updateDisplay();
+    return;
+  }
+
+  if (target.classList.contains('all-clear')) {
+    resetCalculator();
+		updateDisplay();
+    return;
+  }
+
+  inputDigit(target.value);
+  updateDisplay();
+});
+</script>
+</body>
+</html>
